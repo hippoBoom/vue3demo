@@ -22,6 +22,15 @@ const routes: Array<RouteRecordRaw> = [
       import(/* webpackChunkName: "About" */ "../components/About.vue"),
   },
   {
+    path: "/demo",
+    name: "Demo",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "About" */ "../components/Demo.vue"),
+  },
+  {
     path: "/:currentPath(.*)*", // 路由未匹配到，进入这个
     redirect: (_) => {
       return { path: "/404" };
