@@ -7,8 +7,10 @@ import HelloWorld from "./components/HelloWorld.vue";
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <div>
-    <router-link to="/about">go to about</router-link>
-    <router-link to="/demo" style="margin-left: 20px">go to demo</router-link>
+    <router-link to="/about">go to element-plus demo</router-link>
+    <router-link to="/vuexdemo" style="margin-left: 20px"
+      >go to vuex4.0 demo</router-link
+    >
   </div>
   <router-view />
 </template>

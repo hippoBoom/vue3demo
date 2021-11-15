@@ -22,13 +22,13 @@ const routes: Array<RouteRecordRaw> = [
       import(/* webpackChunkName: "About" */ "../pages/About/About.vue"),
   },
   {
-    path: "/demo",
-    name: "Demo",
+    path: "/vuexdemo",
+    name: "Vuexdemo",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "About" */ "../components/Demo.vue"),
+      import(/* webpackChunkName: "About" */ "../pages/Vuexdemo/Vuexdemo.vue"),
   },
   {
     path: "/:currentPath(.*)*", // 路由未匹配到，进入这个
